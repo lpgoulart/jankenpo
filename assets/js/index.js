@@ -17,6 +17,8 @@ function play(you) {
 
     const restart = document.getElementById("again")
     restart.classList.remove("hide")
+    const iaDiv = document.getElementById('ia');
+    iaDiv.classList.remove("hide")
 
     iaChoice(ia)
     result(you, ia)
@@ -49,12 +51,12 @@ function iaChoice (ia) {
     const display = document.getElementById('ia');
 
     if (ia == 1) {
-        display.innerHTML = "papel"
+        display.innerHTML = "<span>papel</span>"
     } else if (ia == 2) {
-        display.innerHTML = "pedra"
+        display.innerHTML = "<span>pedra</span>"
     }
      else {
-        display.innerHTML = "tesoura"
+        display.innerHTML = "<span>tesoura</span>"
      }
 }
 
@@ -80,6 +82,8 @@ function restart() {
     const displayTe = document.getElementById('tesoura');
     const restart = document.getElementById("again")
     restart.classList.add("hide")
+    const ia = document.getElementById('ia');
+    ia.classList.add("hide")
     
 
     displayPa.classList.contains("hide") == true ? displayPa.classList.toggle("hide") : null
