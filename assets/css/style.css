@@ -15,6 +15,18 @@ h2 {
     align-items: center;
 }
 
+#score {
+    color: white;
+    width: 80%;
+    border: 2px solid #EEE;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#score .logo, #score .games {
+    padding: 0 40px;
+}
+
 #app {
     background: hsl(229, 25%, 31%);
     height: 100vh;

@@ -12,8 +12,10 @@
 
 house = 0
 comp = 0
+games = 0
 
 function play(you) {
+    games += 1
     const ia = Math.floor(Math.random() * (4 - 1)) + 1;
 
     container(you)
@@ -78,10 +80,17 @@ function result(you, ia) {
     }
     const score = document.getElementById("score")
     score.innerHTML = `
-        <span>voce</span>
-        ${comp}
-        <span>casa</span>
-        ${house}
+    <div class="logo">
+        JanKenPo
+    </div>
+    <div class="score">
+        <span>voce</span> ${comp} <br >
+        <span>casa</span> ${house}
+    </div>
+    <div class="games">
+        Games <br />
+        ${games}
+    </div>
     `
 }
 
@@ -98,4 +107,26 @@ function restart() {
     displayPe.classList.contains("hide") == true ? displayPe.classList.toggle("hide") : null
     displayTe.classList.contains("hide") == true ? displayTe.classList.toggle("hide") : null
 
+}
+
+function reset() {
+    restart() 
+    games = 0
+    house = 0
+    comp = 0
+    const score = document.getElementById("score")
+    score.innerHTML = `
+        <div class="logo">
+            JanKenPo
+        </div>
+        <div class="score">
+            <span>voce</span> ${comp} <br >
+            <span>casa</span> ${house}
+        </div>
+        <div class="games">
+            Games <br />
+            ${games}
+        </div>
+        `
+    
 }
