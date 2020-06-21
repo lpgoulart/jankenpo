@@ -78,7 +78,7 @@ function result(you, ia) {
     </div>
     <div class="games">
         Games <br />
-        ${games}
+        <span>${games}</span>
     </div>
     `
 }
@@ -114,8 +114,31 @@ function reset() {
         </div>
         <div class="games">
             Games <br />
-            ${games}
+            <span>${games}</span>
         </div>
         `
     
+}
+
+function detailCertificate() {
+    var modal = document.getElementById("myModal");
+    url = "image-rules.svg"
+    // const content = `
+        
+    // `
+    // modal.innerHTML = content
+    modal.style.display = "block";
+
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
 }

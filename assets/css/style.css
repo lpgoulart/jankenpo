@@ -36,6 +36,9 @@ h2 {
     text-align: center;
 }
 
+.games span {
+    font-size: 50px;
+}
 
 #app {
     background: hsl(229, 25%, 31%);
@@ -123,10 +126,10 @@ button:hover {
     background-color: hsl(230, 89%, 62%);
 }
 .rock {
-    background-color: hsl(39, 89%, 49%);
+    background-color: hsl(349, 71%, 52%);
 }
 .scissor {
-    background-color: hsl(349, 71%, 52%);
+    background-color: hsl(39, 89%, 49%);
 }
 
 #you #papel span, #you #pedra span, #you #tesoura span, #you #ia span {
@@ -152,3 +155,49 @@ button:hover {
     margin: 20px;
     cursor: pointer;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #23283b;
+    margin: 12% auto;
+    padding: 20px;
+    width: 78%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .modal-content img {
+      width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+

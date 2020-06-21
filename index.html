@@ -20,7 +20,7 @@
             </div>
             <div class="games">
                 Games <br />
-                0
+                <span>0</span>
             </div>
         </div>
 
@@ -32,17 +32,17 @@
                     </span>
                 </div>
             </div>
-            <div id="pedra" class="choice" onclick="play(2)">
-                <div class="rock">
-                    <span>
-                        <img src="./assets/img/icon-rock.svg" width="100" alt="">
-                    </span>
-                </div>
-            </div>
             <div id="tesoura" class="choice" onclick="play(3)">
                 <div class="scissor">
                     <span>
                         <img src="./assets/img/icon-scissors.svg" width="100" alt="">
+                    </span>
+                </div>
+            </div>
+            <div id="pedra" class="choice" onclick="play(2)">
+                <div class="rock">
+                    <span>
+                        <img src="./assets/img/icon-rock.svg" width="100" alt="">
                     </span>
                 </div>
             </div>
@@ -56,9 +56,18 @@
 
         <div id="rules">
             <button onclick="reset()">reset scores</button>
-            <button onclick="reset()">rules</button>
+            <button onclick="detailCertificate()">rules</button>
         </div>
 
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close">
+                <span >&times;</span>    
+            </div>        
+            <img src="./assets/img/image-rules.svg" alt="rule">
+        </div>
     </div>
 
     <script src="./assets/js/index.js"></script>
