@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div id="app">
+
+
+        <div id="you">
+            <div id="papel" class="choice" onclick="play(1)"><span>papel</span></div>
+            <div id="pedra" class="choice" onclick="play(2)"><span>pedra</span></div>
+            <div id="tesoura" class="choice" onclick="play(3)"><span>tesoura</span></div>
+        </div>
+
+        <div id="again" class="hide">
+            <div id="ia"></div>
+
+            <div id="result"></div>
+
+            <button onclick="restart()">play again</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+</html>

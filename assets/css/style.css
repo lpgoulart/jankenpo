@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    background: red;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+.hide {
+    display: none!important;
+}
+
+#again {
+    text-align: center;
+}
+
+#you {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+#you #papel, #you #pedra, #you #tesoura {
+    background: green;
+}
+#you .choice {
+    text-align: center;
+    width: 45%;
+    background: black;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#you .choice span {
+    padding: 60px;
+    background: blue;
+    border-radius: 100px;
+    color: white;
+}
+
+.choice {
+    margin: 20px;
+    cursor: pointer;
+}
+
+#ia, #result {
+    text-align: center;
+    padding: 30px;
+}
