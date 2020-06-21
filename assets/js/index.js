@@ -70,7 +70,9 @@ function result(you, ia) {
     const score = document.getElementById("score")
     score.innerHTML = `
     <div class="logo">
-        JanKenPo
+        Paper <br>
+        Rock <br>
+        Scissor
     </div>
     <div class="score">
         <span>YOU</span> ${comp} <br >
@@ -106,7 +108,9 @@ function reset() {
     const score = document.getElementById("score")
     score.innerHTML = `
         <div class="logo">
-            JanKenPo
+            Paper <br>
+            Rock <br>
+            Scissor
         </div>
         <div class="score">
             <span>YOU</span> ${comp} <br >
