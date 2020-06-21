@@ -52,12 +52,12 @@ function iaChoice (ia) {
     const display = document.getElementById('ia');
 
     if (ia == 1) {
-        display.innerHTML = `<img src="./assets/img/icon-paper.svg" width="100" alt="">`
+        display.innerHTML = `<div class="paper"><span><img src="./assets/img/icon-paper.svg" width="100" alt=""></span></div>`
     } else if (ia == 2) {
-        display.innerHTML = `<img src="./assets/img/icon-rock.svg" width="100" alt="">`
+        display.innerHTML = `<div class="rock"><span><img src="./assets/img/icon-rock.svg" width="100" alt=""></span></div>`
     }
      else {
-        display.innerHTML = `<img src="./assets/img/icon-scissors.svg" width="100" alt="">`
+        display.innerHTML = `<div class="scissor"><span><img src="./assets/img/icon-scissors.svg" width="100" alt=""></span></div>`
      }
 }
 

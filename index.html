@@ -18,12 +18,28 @@
         </div>
 
         <div id="you">
-            <div id="papel" class="choice" onclick="play(1)"><img src="./assets/img/icon-paper.svg" width="100" alt=""></div>
-            <div id="pedra" class="choice" onclick="play(2)"><img src="./assets/img/icon-rock.svg" width="100" alt=""></div>
-            <div id="tesoura" class="choice" onclick="play(3)"><img src="./assets/img/icon-scissors.svg" width="100" alt=""></div>
+            <div id="papel" class="choice" onclick="play(1)">
+                <div class="paper">
+                    <span>
+                        <img src="./assets/img/icon-paper.svg" width="100" alt="">
+                    </span>
+                </div>
+            </div>
+            <div id="pedra" class="choice" onclick="play(2)">
+                <div class="rock">
+                    <span>
+                        <img src="./assets/img/icon-rock.svg" width="100" alt="">
+                    </span>
+                </div>
+            </div>
+            <div id="tesoura" class="choice" onclick="play(3)">
+                <div class="scissor">
+                    <span>
+                        <img src="./assets/img/icon-scissors.svg" width="100" alt="">
+                    </span>
+                </div>
+            </div>
             <div id="again" class="hide">
-            
-
                 <div id="result"></div>
     
                 <button onclick="restart()">play again</button>
