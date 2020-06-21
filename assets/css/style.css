@@ -172,9 +172,9 @@ button:hover {
   /* Modal Content/Box */
   .modal-content {
     background-color: #23283b;
-    margin: 12% auto;
+    margin: 8% auto;
     padding: 20px;
-    width: 78%;
+    width: 60%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
