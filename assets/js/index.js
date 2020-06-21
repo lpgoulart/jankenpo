@@ -1,11 +1,3 @@
-// async function fetchData() {
-//     await fetch('https://lpgoulart-portfolio.herokuapp.com/repositories')
-//         .then(response => response.json()
-//         .then(data => {
-//             console.log(data)
-//         }))
-// }
-
 // 1 = papel
 // 2 = pedra
 // 3 = tesoura
@@ -35,15 +27,12 @@ function container(you) {
     const displayTe = document.getElementById('tesoura');
 
     if (you == 1) {
-        console.log(you)
         displayPe.classList.add("hide")
         displayTe.classList.add("hide")
     } else if (you == 2) {
-        console.log(you)
         displayPa.classList.add("hide")
         displayTe.classList.add("hide")
     } else {
-        console.log(you)
         displayPa.classList.add("hide")
         displayPe.classList.add("hide")
     }
@@ -84,8 +73,8 @@ function result(you, ia) {
         JanKenPo
     </div>
     <div class="score">
-        <span>voce</span> ${comp} <br >
-        <span>casa</span> ${house}
+        <span>YOU</span> ${comp} <br >
+        <span>IA</span> ${house}
     </div>
     <div class="games">
         Games <br />
@@ -120,8 +109,8 @@ function reset() {
             JanKenPo
         </div>
         <div class="score">
-            <span>voce</span> ${comp} <br >
-            <span>casa</span> ${house}
+            <span>YOU</span> ${comp} <br >
+            <span>IA</span> ${house}
         </div>
         <div class="games">
             Games <br />

@@ -5,7 +5,7 @@ body, html {
 
 h2 {
     font-size: 70px;
-    margin-top: 0;
+    margin: 10px;
 }
 
 #score, #rules {
@@ -13,6 +13,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#rules {
+    justify-content: flex-end;
+    width: 100%;
 }
 
 #score {
@@ -26,6 +31,11 @@ h2 {
 #score .logo, #score .games {
     padding: 0 40px;
 }
+
+.score, .games {
+    text-align: center;
+}
+
 
 #app {
     background: hsl(229, 25%, 31%);
@@ -48,8 +58,37 @@ h2 {
     height: 270px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+
+#result {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    background: hsl(229, 25%, 31%);
+    border: 1px solid #EEE;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+button:hover {
+    background: white;
+    color: hsl(229, 25%, 31%);
+    transition: .3s;
+}
+
+#rules button {
+    width: 200px;
+    padding: 12px;
+    margin-right: 50px;
 }
 
 #you {
@@ -112,9 +151,4 @@ h2 {
 .choice {
     margin: 20px;
     cursor: pointer;
-}
-
-#result {
-    text-align: center;
-    padding: 30px;
 }
