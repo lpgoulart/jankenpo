@@ -10,21 +10,29 @@
     
     <div id="app">
 
+        <div id="score">
+            <span>voce</span>
+            0
+            <span>casa</span>
+            0
+        </div>
 
         <div id="you">
-            <div id="papel" class="choice" onclick="play(1)"><span>papel</span></div>
-            <div id="pedra" class="choice" onclick="play(2)"><span>pedra</span></div>
-            <div id="tesoura" class="choice" onclick="play(3)"><span>tesoura</span></div>
+            <div id="papel" class="choice" onclick="play(1)"><img src="./assets/img/icon-paper.svg" width="100" alt=""></div>
+            <div id="pedra" class="choice" onclick="play(2)"><img src="./assets/img/icon-rock.svg" width="100" alt=""></div>
+            <div id="tesoura" class="choice" onclick="play(3)"><img src="./assets/img/icon-scissors.svg" width="100" alt=""></div>
+            <div id="again" class="hide">
+            
+
+                <div id="result"></div>
+    
+                <button onclick="restart()">play again</button>
+            </div>
             <div id="ia" class="choice hide"></div>
         </div>
 
-        <div id="again" class="hide">
-            
+        <div id="rules">a</div>
 
-            <div id="result"></div>
-
-            <button onclick="restart()">play again</button>
-        </div>
     </div>
 
     <script src="./assets/js/index.js"></script>

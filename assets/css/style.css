@@ -3,13 +3,25 @@ body, html {
     padding: 0;
 }
 
+h2 {
+    font-size: 70px;
+    margin-top: 0;
+}
+
+#score, #rules {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #app {
     background: red;
     height: 100vh;
     width: 100%;
     overflow: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
@@ -20,33 +32,33 @@ body, html {
 
 #again {
     text-align: center;
+    width: 20%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #you {
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 50%;
+    height: 50vh;
+    width: 70%;
 }
 #you #papel, #you #pedra, #you #tesoura, #you #ia {
-    background: green;
 }
 #you .choice {
     text-align: center;
-    width: 42%;
+    width: 32%;
     height: 200px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#you .choice span {
-    padding: 60px;
-    background: blue;
-    border-radius: 100px;
-    color: white;
 }
 
 .choice {

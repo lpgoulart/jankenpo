@@ -10,6 +10,9 @@
 // 2 = pedra
 // 3 = tesoura
 
+house = 0
+comp = 0
+
 function play(you) {
     const ia = Math.floor(Math.random() * (4 - 1)) + 1;
 
@@ -29,7 +32,6 @@ function container(you) {
     const displayPe = document.getElementById('pedra');
     const displayTe = document.getElementById('tesoura');
 
-
     if (you == 1) {
         console.log(you)
         displayPe.classList.add("hide")
@@ -38,12 +40,11 @@ function container(you) {
         console.log(you)
         displayPa.classList.add("hide")
         displayTe.classList.add("hide")
-    }
-     else {
+    } else {
         console.log(you)
         displayPa.classList.add("hide")
         displayPe.classList.add("hide")
-     }
+    }
 }
 
 function iaChoice (ia) {
@@ -51,12 +52,12 @@ function iaChoice (ia) {
     const display = document.getElementById('ia');
 
     if (ia == 1) {
-        display.innerHTML = "<span>papel</span>"
+        display.innerHTML = `<img src="./assets/img/icon-paper.svg" width="100" alt="">`
     } else if (ia == 2) {
-        display.innerHTML = "<span>pedra</span>"
+        display.innerHTML = `<img src="./assets/img/icon-rock.svg" width="100" alt="">`
     }
      else {
-        display.innerHTML = "<span>tesoura</span>"
+        display.innerHTML = `<img src="./assets/img/icon-scissors.svg" width="100" alt="">`
      }
 }
 
@@ -65,15 +66,23 @@ function result(you, ia) {
     const display = document.getElementById('result');
 
     if ( (you == 1 && ia == 2) || (you == 2 && ia == 3) || (you == 3 && ia == 1) ) {
-        display.innerHTML = "vitoria"
+        comp += 1
+        display.innerHTML = "<h2>vitoria</h2>"
     }
     else if ( (you == 1 && ia == 1) || (you == 2 && ia == 2) || (you == 3 && ia == 3) ) {
-        display.innerHTML = "empate"
+        display.innerHTML = "<h2>empate</h2>"
     }
     else {
-        display.innerHTML = "derrota"
+        house += 1
+        display.innerHTML = "<h2>derrota</h2>"
     }
-    
+    const score = document.getElementById("score")
+    score.innerHTML = `
+        <span>voce</span>
+        ${comp}
+        <span>casa</span>
+        ${house}
+    `
 }
 
 function restart() {
@@ -84,7 +93,6 @@ function restart() {
     restart.classList.add("hide")
     const ia = document.getElementById('ia');
     ia.classList.add("hide")
-    
 
     displayPa.classList.contains("hide") == true ? displayPa.classList.toggle("hide") : null
     displayPe.classList.contains("hide") == true ? displayPe.classList.toggle("hide") : null
